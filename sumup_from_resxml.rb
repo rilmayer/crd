@@ -43,7 +43,7 @@ refakyoudata = Hash.new #結果出力用のハッシュを用意
 # 「未就学児」「小中学生」「高校生」「学生」「社会人」「団体」「図書館」または任意の文字列
 # lib-name    図書館名（回答）
 
-file_path_of_xml = "profile_2014-12-16.xml"
+file_path_of_xml = "response_xml.xml"
 
 doc = REXML::Document.new(File.read(file_path_of_xml))
 doc.elements.each('result_set/result') do |element|
